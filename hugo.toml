@@ -1,0 +1,42 @@
+baseURL = "https://yibo-xie.github.io/"
+languageCode = "zh-cn"
+title = "Yibo Xie"
+
+theme = "PaperMod"
+
+[pagination]
+pagerSize = 10
+
+[params]
+
+author = "Yibo Xie"
+
+description = "Robotics | AI | VLA"
+
+ShowReadingTime = true
+ShowShareButtons = true
+ShowCodeCopyButtons = true
+ShowPostNavLinks = true
+
+[params.homeInfoParams]
+
+Title = "Hi, I'm Yibo!"
+
+Content = """
+Robotics Engineer
+
+Research interests:
+
+- Physical AI
+- Vision Language Action
+- Humanoid Robots
+- Reinforcement Learning
+"""
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/yibo-xie"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:wangduphunsukh@stu.xmu.edu.cn"
