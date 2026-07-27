@@ -5,7 +5,7 @@ on:
     branches:
       - main
     
-permission:
+permissions:   # ✅ 改为复数 permissions
   contents: read
   pages: write
   id-token: write
@@ -22,7 +22,7 @@ jobs:
     steps:
 
       - name: CheckOut
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4   # ⚠️ 建议改为 actions/checkout@v4（注意是 actions 不是 action）
         with:
           submodules: recursive
       
@@ -36,7 +36,7 @@ jobs:
         run: hugo
       
       - name: Upload
-        uses: actions/Upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v3   # ⚠️ upload 是小写
         with:
           path: ./public
 
@@ -49,7 +49,7 @@ jobs:
     environment:
       name: github-pages
     
-    permission:
+    permissions:   # ✅ 同样改为复数
       pages: write
       id-token: write
 
